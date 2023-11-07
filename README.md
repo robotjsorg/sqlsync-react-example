@@ -3,14 +3,11 @@ These are instructions for wrapping [SQLSync](https://github.com/orbitinghail/sq
 
 ## Build SQLSync
 * Clone SQLSync: `git clone https://github.com/orbitinghail/sqlsync`
-* Manually delete ALL node_modules folders in `/demo/frontend`, `/demo/cloudflare_backend`, and `/lib/sqlsync-worker` 
 * Run the commands below once at a time:
 ```
 cd sqlsync
-rustup target add wasm32-unknown-unknown
 just build
 just run-with-prefix 'wasm-'
-just wasm-demo-reducer --release
 just package-sqlsync-worker dev
 cd sqlsync/demo/cloudflare_backend
 pnpm i
