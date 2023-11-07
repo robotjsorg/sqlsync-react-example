@@ -3,7 +3,7 @@ These are instructions for wrapping [SQLSync](https://github.com/orbitinghail/sq
 
 ## Build SQLSync
 * Clone SQLSync: `git clone https://github.com/orbitinghail/sqlsync`
-* Run the commands below once at a time:
+* Run the commands below one at a time:
 ```
 cd sqlsync
 just build
