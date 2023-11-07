@@ -20,7 +20,11 @@ pnpm i
 ```
 
 ## Build SQLSync Wrapper
-* Clone this repo alongside SQLSync: `git clone https://github.com/jmcmahon443/sqlsync-wrapper`  
+* Clone this repo alongside SQLSync: `git clone https://github.com/jmcmahon443/sqlsync-wrapper`
+```
+├── sqlsync/
+└── sqlsync-wrapper/
+```
 
 ### Local
 * Deploy backend using `pnpm dev` from `sqlsync/demo/cloudflare-backend/`
