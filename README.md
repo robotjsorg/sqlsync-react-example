@@ -23,9 +23,9 @@ pnpm i
 * Clone this repo alongside SQLSync: `git clone https://github.com/jmcmahon443/sqlsync-wrapper`  
 
 ### Local
-* Deploy backend using `pnpm dev` from `sqlsync/demo/cloudflare-backend`
-* Build and upload reducer to local backend using `just upload-reducer` from `sqlsync-wrapper`
-* Deploy frontend using `pnpm i; pnpm dev` from `sqlsync-wrapper/frontend`
+* Deploy backend using `pnpm dev` from `sqlsync/demo/cloudflare-backend/`
+* Build and upload reducer to local backend using `just upload-reducer` from `sqlsync-wrapper/`
+* Deploy frontend using `pnpm i; pnpm dev` from `sqlsync-wrapper/frontend/`
 
 ### Remote
 #### Backend
