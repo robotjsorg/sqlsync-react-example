@@ -1,0 +1,3 @@
+packages:
+  - "../sqlsync/demo/cloudflare_backend"
+  - "frontend"

@@ -1,0 +1,48 @@
+{
+  "name": "frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "release": "pnpm build && wrangler pages deploy dist"
+  },
+  "dependencies": {
+    "@mantine/code-highlight": "^7.1.5",
+    "@mantine/core": "^7.1.5",
+    "@mantine/form": "^7.1.5",
+    "@mantine/hooks": "^7.1.5",
+    "@orbitinghail/sqlsync-react": "0.1.0",
+    "@orbitinghail/sqlsync-worker": "0.1.0",
+    "@tabler/icons-react": "^2.39.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-github-btn": "^1.4.0",
+    "react-qr-code": "^2.0.12",
+    "react-router-dom": "^6.17.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.8.8",
+    "@types/react": "^18.2.31",
+    "@types/react-dom": "^18.2.14",
+    "@types/uuid": "^9.0.6",
+    "@types/wicg-file-system-access": "^2020.9.8",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
+    "@vitejs/plugin-react": "^4.1.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.52.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "postcss": "^8.4.31",
+    "postcss-preset-mantine": "^1.9.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.5.0",
+    "wrangler": "^3.14.0"
+  }
+}
