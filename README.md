@@ -22,19 +22,19 @@ pnpm i
 ### Local
 * Deploy backend using `pnpm dev` from `sqlsync/demo/cloudflare_backend`: `cd path/to/sqlsync/demo/cloudflare_backend && pnpm dev`
 * Build reducer using `just wasm-reducer` from `sqlsync-wrapper`: `cd path/to/sqlsync-wrapper && just wasm-reducer` Equivalent of: `cd reducer && cargo build --target wasm32-unknown-unknown --package reducer '--release'`
-* Upload reducer to backend using `just upload-reducer` to backend from `sqlsync-wrapper`: `cd path/to/sqlsync-wrapper && just upload-reducer`
+* Upload reducer to local backend using `just upload-reducer` from `sqlsync-wrapper`: `cd path/to/sqlsync-wrapper && just upload-reducer`
 * Deploy frontend using `pnpm i; pnpm dev` from `sqlsync-wrapper/frontend`: `cd path/to/sqlsync-wrapper/frontend && pnpm i; pnpm dev`
 
 ### Remote
 * Manually update `name` and `bucket_name` in `wrangler.toml` in `sqlsync/demo/cloudflare_backend/` to match the intended Cloudflare Worker name and R2 Bucket name.
 * Manually update `SQLSYNC_PROD_URL` in `justfile` in `sqlsync-wrapper/` to intended Cloudflare Worker URL
 * Deploy backend using `npx wrangler deploy` from `sqlsync/demo/cloudflare_backend`: `cd path/to/sqlsync/demo/cloudflare_backend && npx wrangler deploy`
-* Upload reducer to backend using `just upload-reducer remote` from `sqlsync-wrapper`: `cd path/to/sqlsync-wrapper && just upload-reducer remote`
+* Upload reducer to remote backend using `just upload-reducer remote` from `sqlsync-wrapper`: `cd path/to/sqlsync-wrapper && just upload-reducer remote`
 * `cd demo/frontend`
 * Update `COORDINATOR_URL` in `main.tsx` in `sqlsync-wrapper/demo/frontend/` to intended Cloudflare Worker URL
 * `npx vite build`
 * Double check .wasm files are under 25MB (for example, should be 2MB compared to 60MB)
-* Manually upload to Cloudflare Pages
+* Manually upload `path/to/sqlsync-wrapper/frontend/dist/` to Cloudflare Pages
 
 ### TODO: Test if required
 * `cd path/to/sqlsync/lib/sqlsync-worker && pnpm install @rollup/plugin-node-resolve`
