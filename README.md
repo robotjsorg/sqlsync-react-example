@@ -10,6 +10,7 @@ just build
 just run-with-prefix 'wasm-'
 cd sqlsync/lib/sqlsync-worker
 pnpm install @rollup/plugin-node-resolve
+cd sqlsync
 just package-sqlsync-worker dev
 cd sqlsync/demo/cloudflare_backend
 pnpm i
