@@ -8,6 +8,7 @@ These are instructions for wrapping [SQLSync](https://github.com/orbitinghail/sq
 cd sqlsync
 just build
 just run-with-prefix 'wasm-'
+cd sqlsync/lib/sqlsync-worker && pnpm install @rollup/plugin-node-resolve
 just package-sqlsync-worker dev
 cd sqlsync/demo/cloudflare_backend
 pnpm i
@@ -34,5 +35,5 @@ pnpm i
 * Manually upload `path/to/sqlsync-wrapper/frontend/dist/` to Cloudflare Pages
 
 ### TODO: Test if required
-* `cd path/to/sqlsync/lib/sqlsync-worker && pnpm install @rollup/plugin-node-resolve`
+
 * `cd path/to/sqlsync-wrapper/frontend && pnpm add @orbitinghail/sqlsync-react @orbitinghail/sqlsync-worker`
