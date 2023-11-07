@@ -32,6 +32,8 @@ pnpm i
 * Deploy frontend using `pnpm i; pnpm dev` from `sqlsync-wrapper/frontend/`
 
 ### Remote
+These are instructions for deploying to Cloudflare.
+
 #### Backend
 * Manually update `name` and `bucket_name` in `wrangler.toml` in `sqlsync/demo/cloudflare-backend/` to match the intended Cloudflare Worker name and R2 Bucket name.
 * Manually update `SQLSYNC_PROD_URL` in `justfile` in `sqlsync-wrapper/` to intended Cloudflare Worker URL
