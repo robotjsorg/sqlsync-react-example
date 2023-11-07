@@ -31,14 +31,11 @@ pnpm i
 #### Backend
 * Manually update `name` and `bucket_name` in `wrangler.toml` in `sqlsync/demo/cloudflare-backend/` to match the intended Cloudflare Worker name and R2 Bucket name.
 * Manually update `SQLSYNC_PROD_URL` in `justfile` in `sqlsync-wrapper/` to intended Cloudflare Worker URL
-* Deploy backend using `npx wrangler deploy` from `sqlsync/demo/cloudflare-backend`
-* Upload reducer to remote backend using `just upload-reducer remote` from `sqlsync-wrapper`
-* `cd demo/frontend`
+* Deploy backend using `npx wrangler deploy` from `sqlsync/demo/cloudflare-backend/`
+* Upload reducer to remote backend using `just upload-reducer remote` from `sqlsync-wrapper/`
+
 #### Frontend
 * Manually update `COORDINATOR_URL` in `main.tsx` in `sqlsync-wrapper/demo/frontend/` to intended Cloudflare Worker URL
-* `npx vite build`
-* Double check .wasm files are under 25MB (for example, should be 2MB compared to 60MB)
-* Manually upload `path/to/sqlsync-wrapper/frontend/dist/` to Cloudflare Pages
-
-### TODO: Test if required
-* `pnpm add @orbitinghail/sqlsync-react @orbitinghail/sqlsync-worker` from `sqlsync-wrapper/frontend`
+* Build the frontend distribution using `npx vite build` from `sqlsync-wrapper/frontend/`
+* Double check `.wasm` files are under 25MB (for example, should be 2MB compared to 60MB)
+* Manually upload `sqlsync-wrapper/frontend/dist/` to Cloudflare Pages
