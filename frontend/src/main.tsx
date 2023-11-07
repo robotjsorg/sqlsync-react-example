@@ -22,7 +22,7 @@ const isLocalhost = location.hostname === "localhost" || location.hostname.start
 
 const COORDINATOR_URL = isLocalhost
   ? `${location.hostname}:8787`
-  : "api.robotjs.org";
+  : "sqlsync.orbitinghail.workers.dev";
 const COORDINATOR_URL_WS = (isLocalhost ? "ws" : "wss") + "://" + COORDINATOR_URL;
 
 const newDocumentId = async (name = "") => {
