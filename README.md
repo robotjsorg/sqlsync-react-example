@@ -1,4 +1,4 @@
-# SQLSync Wrapper
+# SQLSync React
 These are instructions for implementing a React client with [SQLSync](https://github.com/orbitinghail/sqlsync) by [orbitinghail](https://github.com/orbitinghail).
 
 ## Build SQLSync
