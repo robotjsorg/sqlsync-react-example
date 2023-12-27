@@ -1,6 +1,8 @@
 # SQLSync React
 These are instructions for implementing the example React client with [SQLSync](https://github.com/orbitinghail/sqlsync) by [orbitinghail](https://github.com/orbitinghail).
 
+ [YouTube tutorial video](https://www.youtube.com/watch?v=lGgwNot5OEc)
+
 ## Build SQLSync
 * Clone SQLSync: `git clone https://github.com/orbitinghail/sqlsync`
 * Run the commands below one at a time:
