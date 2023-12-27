@@ -1,5 +1,5 @@
 # SQLSync Wrapper
-These are instructions for wrapping [SQLSync](https://github.com/orbitinghail/sqlsync) by [orbitinghail](https://github.com/orbitinghail).
+These are instructions for implementing a React client with [SQLSync](https://github.com/orbitinghail/sqlsync) by [orbitinghail](https://github.com/orbitinghail).
 
 ## Build SQLSync
 * Clone SQLSync: `git clone https://github.com/orbitinghail/sqlsync`
