@@ -1,6 +1,5 @@
 import { Center, Flex, Paper, Stack, Title } from "@mantine/core";
-import { sql } from "@orbitinghail/sqlsync-react";
-import { JournalId } from "@orbitinghail/sqlsync-worker";
+import { JournalId, sql } from "@orbitinghail/sqlsync-worker";
 import { ConnectionStatus } from "./ConnectionStatus";
 import { useMutate, useQuery } from "../doctype";
 import { Task, TaskItem } from "./TaskItem";

@@ -8,8 +8,7 @@ upload-reducer target='local':
     #!/usr/bin/env bash
     just wasm-reducer
     set -euo pipefail
-    cd ../sqlsync/demo/cloudflare-backend
-    REDUCER_PATH="../../../sqlsync-react/reducer/target/wasm32-unknown-unknown/release/reducer.wasm"
+    REDUCER_PATH="reducer/target/wasm32-unknown-unknown/release/reducer.wasm"
     if [[ '{{target}}' = 'remote' ]]; then
         curl -X PUT --data-binary @$REDUCER_PATH {{SQLSYNC_PROD_URL}}/reducer
     else
