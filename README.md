@@ -21,7 +21,7 @@ cd sqlsync/demo/cloudflare-backend
 pnpm i
 ```
 
-## Build SQLSync React
+## Build SQLSync React Example
 * Clone this repo alongside SQLSync: `git clone https://github.com/jmcmahon443/sqlsync-react-example`
 ```
 ├── sqlsync/
